@@ -45,7 +45,7 @@ public class GameOver extends JFrame {
 			JButton btnRestart = new JButton("");
 			btnRestart.setBounds(106, 259, 190, 53);
 			btnRestart.setIcon((new ImageIcon(getClass().getResource("Game_Over_btn_08.png"))));
-			// Makes border invisable
+			// Makes border invisible
 			btnRestart.setBorderPainted(false);
 			btnRestart.setContentAreaFilled(false);
 			btnRestart.setFocusPainted(false);
