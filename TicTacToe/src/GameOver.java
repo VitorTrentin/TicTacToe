@@ -19,6 +19,7 @@ import javax.swing.JTable;
 import javax.swing.JTextPane;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
+import javax.print.DocFlavor.URL;
 import javax.swing.ImageIcon;
 
 public class GameOver extends JFrame {
@@ -36,14 +37,14 @@ public class GameOver extends JFrame {
 		setContentPane(contentPane);
 		// Button Section
 		try {
-			Font f = Font
-					.createFont(Font.TRUETYPE_FONT,
-							new FileInputStream(new File("/home/trentin/Desktop/JV/TicTacToe/bin/fonte.ttf")))
-					.deriveFont(Font.PLAIN, 45);
+			//Getting font
+			java.net.URL url = getClass().getResource("fonte.ttf");
+			   Font f = Font.createFont(Font.TRUETYPE_FONT, new FileInputStream(new File(url.getPath())))
+			     .deriveFont(Font.PLAIN, 45);
 			contentPane.setLayout(null);
 			JButton btnRestart = new JButton("");
 			btnRestart.setBounds(106, 259, 190, 53);
-			btnRestart.setIcon(new ImageIcon("/home/trentin/Desktop/JV/TicTacToe/bin/Game_Over_btn_08.png"));
+			btnRestart.setIcon((new ImageIcon(getClass().getResource("Game_Over_btn_08.png"))));
 			// Makes border invisable
 			btnRestart.setBorderPainted(false);
 			btnRestart.setContentAreaFilled(false);
@@ -74,7 +75,7 @@ public class GameOver extends JFrame {
 			contentPane.add(lblNewLabel);
 			//Background JLabel Section
 			JLabel lblNewLabel_1 = new JLabel("New label");
-			lblNewLabel_1.setIcon(new ImageIcon("/home/trentin/Desktop/JV/TicTacToe/bin/Game_Over_bg .jpg"));
+			lblNewLabel_1.setIcon((new ImageIcon(getClass().getResource("Game_Over_bg .jpg"))));
 			lblNewLabel_1.setBounds(0, 0, 400, 400);
 			contentPane.add(lblNewLabel_1);
 

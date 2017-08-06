@@ -32,7 +32,7 @@ public class Menu extends JFrame implements ActionListener {
 		//Ai game JButton Section
 		JButton btnNewButton = new JButton("");
 		btnNewButton.setLocation(110, 200);
-		btnNewButton.setIcon(new ImageIcon("/home/trentin/Desktop/JV/TicTacToe/bin/btn_menu_01.png"));
+		btnNewButton.setIcon(new ImageIcon(getClass().getResource("btn_menu_01.png")));
 		btnNewButton.setSize(190, 44);
 		// Makes border invisable
 		btnNewButton.setBorderPainted(false);
@@ -53,7 +53,7 @@ public class Menu extends JFrame implements ActionListener {
 		JButton btnNewButton_1 = new JButton("");
 		btnNewButton_1.setLocation(110, 250);
 		btnNewButton_1.setSize(190, 44);
-		btnNewButton_1.setIcon(new ImageIcon("/home/trentin/Desktop/JV/TicTacToe/bin/btn_menu_02.png"));
+		btnNewButton_1.setIcon(new ImageIcon(getClass().getResource("btn_menu_02.png")));
 		// Makes border invisable
 		btnNewButton_1.setBorderPainted(false);
 		btnNewButton_1.setContentAreaFilled(false);
@@ -69,7 +69,7 @@ public class Menu extends JFrame implements ActionListener {
 		contentPane.add(btnNewButton_1);
 		//Background JLabel Section
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("/home/trentin/Desktop/JV/TicTacToe/bin/jogo_da_velha_bg.jpg"));
+		lblNewLabel.setIcon(new ImageIcon(getClass().getResource("jogo_da_velha_bg.jpg")));
 		lblNewLabel.setBounds(0, 0, 400, 400);
 		contentPane.add(lblNewLabel);
 		setLocationRelativeTo(null);// Centralize Screen
