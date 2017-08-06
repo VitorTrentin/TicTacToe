@@ -34,7 +34,7 @@ public class Menu extends JFrame implements ActionListener {
 		btnNewButton.setLocation(110, 200);
 		btnNewButton.setIcon(new ImageIcon(getClass().getResource("btn_menu_01.png")));
 		btnNewButton.setSize(190, 44);
-		// Makes border invisable
+		// Makes border invisible
 		btnNewButton.setBorderPainted(false);
 		btnNewButton.setContentAreaFilled(false);
 		btnNewButton.setFocusPainted(false);
@@ -54,7 +54,7 @@ public class Menu extends JFrame implements ActionListener {
 		btnNewButton_1.setLocation(110, 250);
 		btnNewButton_1.setSize(190, 44);
 		btnNewButton_1.setIcon(new ImageIcon(getClass().getResource("btn_menu_02.png")));
-		// Makes border invisable
+		// Makes border invisible
 		btnNewButton_1.setBorderPainted(false);
 		btnNewButton_1.setContentAreaFilled(false);
 		btnNewButton_1.setFocusPainted(false);
