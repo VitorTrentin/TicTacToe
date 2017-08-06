@@ -58,7 +58,7 @@ public class Board {
 			return true;
 		}
 		// check draw
-		if (this.emptySlots.size() == 0) {
+		if (this.emptySlots.isEmpty()) {
 			draw = true;
 			return true;
 		}
@@ -68,15 +68,16 @@ public class Board {
 
 	public void callWinner() throws FontFormatException, IOException {
 		if (checkWin()) {
-			if (!draw) {
+			if (draw!=true) {
 				if (whosTurn == 1) {
 					gO.xScore++;
 				} else {
 					gO.oScore++;
 				}
 				//create new gameOver tab
-				gO = new GameOver(game);
+				
 			}
+			gO = new GameOver(game);
 			gO.setVisible(true);
 			this.gameLive = false;
 		}

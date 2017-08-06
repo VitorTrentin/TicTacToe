@@ -40,6 +40,7 @@ public class XOButton extends JButton implements ActionListener {
 				if(!ai.live){
 					setIcon(O);
 					board.setCasa(2, buttonNumber);
+
 					board.setWhosTurn(1);	
 				}
 			}
